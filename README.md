@@ -14,10 +14,6 @@ In the future, this functionality will be integrated directly into the GeoTrelli
 ## USAGE
 
 ```scala
-  /** Example of creating a  WCS Service.
-    *
-    */
-
   @Path("/customWCS")
   class MyWCSService extends WCSResource {
     /**
@@ -33,10 +29,10 @@ In the future, this functionality will be integrated directly into the GeoTrelli
 
   @Path("customWMS")
   class MyWMSService extends WMSResource {
-    // Execute a geoprocessing operation given a layer name and a raster extent.
-    // Override this method to include your own operation.
-    //
-    // The final result should be an raster with RGBA color values.
+    /** Execute a geoprocessing operation given a layer name and a raster extent.
+     *  Override this method to include your own operation.
+     *  The final result should be an raster with RGBA color values.
+     */ 
     def getOperation(name:String, reOp:Op[RasterExtent]):Op[Raster] = {
       val data = io.LoadRaster(name, reOp)
       ## implement your geoprocessing operation here
