@@ -18,7 +18,7 @@ import geotrellis.statistics.op._
 
 
 @Path("/wms")
-class WMS {
+class WMSResource {
   // Execute a geoprocessing operation given a layer name and a raster extent.
   // Override this method to include your own operation.
   //
@@ -170,7 +170,7 @@ class WMS {
 }
 
 
-object WMS {
+object WMSResource {
 
   // Information page for debugging.
   def infoPage(cols:Int, rows:Int, ms:Long, url:String, tree:String) = """

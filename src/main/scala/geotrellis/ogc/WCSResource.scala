@@ -26,7 +26,7 @@ import geotrellis.statistics.op._
  * Right now GetCapabilities and GetCoverage are supported.
  */
 @Path("/wcs")
-class WCS {
+class WCSResource {
 
   /**
    * Given a layer name and a raster extent, return the operation to execute.
