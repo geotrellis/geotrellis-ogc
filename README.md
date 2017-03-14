@@ -1,4 +1,6 @@
-# GeoTrellis OGC
+# DEPRECATED - no longer maintained, and will not work with current versions of GeoTrellis. See https://github.com/locationtech/geotrellis/issues/2069 for updates on OGC support in GeoTrellis.
+
+## GeoTrellis OGC
 
 This project provides libraries for creating WMS or WCS services with GeoTrellis and a simple example template service.
 
